@@ -1,184 +1,151 @@
-:root {
-    --bg-primary: #0a0a0a;
-    --bg-secondary: #111111;
-    --text-primary: #f5f5f5;
-    --text-secondary: #a0a0a0;
-    --accent: #ff4d5a; /* A vibrant color like coral, electric blue, or neon green */
-    --font-body: 'Inter', sans-serif;
-    --font-heading: 'Playfair Display', serif;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name | [Your Title]</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Link to a cool icon library like Font Awesome or Boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Link to a premium font from Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Animated Background Element -->
+    <div class="bg-animation"></div>
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-logo">
+            <a href="#"><span>Y.L.</span></a> <!-- Your Initials -->
+        </div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button class="btn-hire-me">Hire Me</button>
+    </nav>
 
-body {
-    background-color: var(--bg-primary);
-    color: var(--text-primary);
-    font-family: var(--font-body);
-    line-height: 1.6;
-    overflow-x: hidden;
-}
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="title-line">Innovating</span>
+                <span class="title-line">Digital</span>
+                <span class="title-line"><span class="accent-text">Experiences</span></span>
+            </h1>
+            <p class="hero-description">[Your Name] is a [Your Profession] crafting elegant, performant solutions for the modern web.</p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">View My Work</a>
+                <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <!-- This could be a 3D model, a cool illustration, or a profile picture with a morphing shape behind it -->
+            <div class="profile-container">
+                <img src="assets/images/your-headshot.jpg" alt="Your Name">
+            </div>
+        </div>
+    </section>
 
-/* Animated Background */
-.bg-animation {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: radial-gradient(circle at 20% 50%, rgba(255, 77, 90, 0.1) 0%, transparent 50%),
-                radial-gradient(circle at 80% 20%, rgba(100, 100, 255, 0.1) 0%, transparent 50%);
-    z-index: -1;
-    animation: gradientShift 15s ease-in-out infinite;
-}
+    <!-- About Me Section -->
+    <section id="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>Driven and creative [Your Profession] with a passion for building things that live on the internet. I specialize in [Mention 2-3 key skills, e.g., front-end development, UI/UX design, brand strategy].</p>
+                    <p>My approach combines a sharp eye for detail with a deep understanding of user-centric design to deliver products that are not only beautiful but also intuitive and effective.</p>
+                    <div class="skills-list">
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">React</span>
+                        <span class="skill-tag">Figma</span>
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">WebGL</span>
+                        <!-- Add more -->
+                    </div>
+                </div>
+                <div class="about-fun-fact">
+                    <h3>Beyond the Screen</h3>
+                    <p>When I'm not coding, you can find me [Your interesting hobby, e.g., building mechanical keyboards, astrophotography, rock climbing].</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-@keyframes gradientShift {
-    0%, 100% { opacity: 0.7; }
-    50% { opacity: 1; }
-}
+    <!-- Work Experience Section -->
+    <section id="experience">
+        <div class="container">
+            <h2 class="section-title">Work Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">2022 - Present</div>
+                    <div class="timeline-content">
+                        <h3>Senior Developer</h3>
+                        <h4>Innovative Tech Co.</h4>
+                        <p>Led a team of 5 developers in building a SaaS platform used by over 10,000 customers. Architected a new microservices backend that improved performance by 40%.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2020 - 2022</div>
+                    <div class="timeline-content">
+                        <h3>Front-End Developer</h3>
+                        <h4>Creative Digital Agency</h4>
+                        <p>Designed and developed responsive websites and interactive experiences for clients in the fashion and luxury goods sector.</p>
+                    </div>
+                </div>
+                <!-- Add more items -->
+            </div>
+        </div>
+    </section>
 
-/* Typography */
-.section-title {
-    font-family: var(--font-heading);
-    font-size: 3rem;
-    margin-bottom: 3rem;
-    position: relative;
-    display: inline-block;
-}
-.section-title::after {
-    content: '';
-    position: absolute;
-    bottom: -10px;
-    left: 0;
-    width: 60px;
-    height: 3px;
-    background: var(--accent);
-}
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/images/project1.jpg" alt="Project One">
+                    </div>
+                    <div class="project-info">
+                        <h3>Project Aurora</h3>
+                        <p>A data visualization dashboard built with D3.js and React, presenting complex metrics in an intuitive and beautiful way.</p>
+                        <div class="project-tech">
+                            <span>React</span>
+                            <span>D3.js</span>
+                            <span>Node.js</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#"><i class='bx bx-link-external'></i></a>
+                            <a href="#"><i class='bx bxl-github'></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add more project cards -->
+            </div>
+        </div>
+    </section>
 
-.accent-text {
-    color: var(--accent);
-}
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2 class="section-title">Let's Create Something Amazing</h2>
+            <p class="contact-subtitle">Have a project in mind? I'd love to hear about it.</p>
+            <div class="contact-links">
+                <a href="mailto:youremail@domain.com"><i class='bx bx-envelope'></i> youremail@domain.com</a>
+                <a href="https://linkedin.com/in/yourprofile"><i class='bx bxl-linkedin-square'></i> LinkedIn</a>
+                <a href="https://github.com/yourprofile"><i class='bx bxl-github'></i> GitHub</a>
+            </div>
+        </div>
+    </section>
 
-/* Navigation */
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 2rem 5%;
-    position: fixed;
-    width: 100%;
-    z-index: 1000;
-    background: rgba(10, 10, 10, 0.8);
-    backdrop-filter: blur(10px);
-}
+    <footer>
+        <p>&copy; <span id="year"></span> Your Name. Crafted with passion.</p>
+    </footer>
 
-.nav-logo a {
-    font-weight: 700;
-    font-size: 1.5rem;
-    text-decoration: none;
-    color: var(--text-primary);
-}
-
-.nav-links {
-    display: flex;
-    list-style: none;
-    gap: 2rem;
-}
-
-.nav-links a {
-    text-decoration: none;
-    color: var(--text-secondary);
-    font-weight: 500;
-    transition: color 0.3s ease;
-    position: relative;
-}
-
-.nav-links a:hover {
-    color: var(--text-primary);
-}
-
-.nav-links a::after {
-    content: '';
-    position: absolute;
-    bottom: -5px;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background: var(--accent);
-    transition: width 0.3s ease;
-}
-
-.nav-links a:hover::after {
-    width: 100%;
-}
-
-.btn-hire-me {
-    background: transparent;
-    color: var(--accent);
-    border: 1px solid var(--accent);
-    padding: 0.7rem 1.5rem;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.btn-hire-me:hover {
-    background: var(--accent);
-    color: var(--bg-primary);
-}
-
-/* Hero Section */
-#hero {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 10%;
-}
-
-.hero-title {
-    font-size: 4rem;
-    line-height: 1.1;
-    margin-bottom: 1.5rem;
-}
-
-.title-line {
-    display: block;
-}
-
-.hero-description {
-    font-size: 1.2rem;
-    color: var(--text-secondary);
-    max-width: 500px;
-    margin-bottom: 2rem;
-}
-
-/* Project Cards */
-.projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 2rem;
-}
-
-.project-card {
-    background: var(--bg-secondary);
-    border-radius: 10px;
-    overflow: hidden;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.project-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 20px 40px rgba(255, 77, 90, 0.2);
-}
-
-/* Add more styles for other sections... */
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 6rem 2rem;
-}
+    <script src="script.js"></script>
+</body>
+</html>
