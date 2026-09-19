@@ -1,12 +1,1531 @@
-<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="EricOS — an interactive portfolio by Eric Ghannam."><title>EricOS — Eric Ghannam</title><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"><link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='15' fill='%23101b38'/%3E%3Cpath d='M18 19h28v8H27v5h16v7H27v6h20' fill='none' stroke='%236effd8' stroke-width='5'/%3E%3C/svg%3E"><link rel="stylesheet" href="styles.css"></head><body>
-<main class="desktop" id="desktop"><div class="aurora a1"></div><div class="aurora a2"></div><div class="grain"></div>
-<header class="menubar"><button class="brand" data-open="welcome"><span class="brand-glyph">E</span><b>EricOS</b></button><nav><button data-open="about">About</button><button data-open="experience">Experience</button><button data-open="projects">Projects</button><button data-open="network">Studio Network</button></nav><div class="bar-right"><span>⌁</span><button id="themeToggle" aria-label="Change wallpaper">◐</button><time id="clock"></time></div></header>
-<section class="icon-grid" aria-label="Desktop applications"><button class="desktop-icon" data-open="about"><span class="icon icon-about">EG</span><span>about_me.txt</span></button><button class="desktop-icon" data-open="experience"><span class="icon icon-exp">↗</span><span>experience</span></button><button class="desktop-icon" data-open="projects"><span class="icon icon-project">◇</span><span>projects</span></button><button class="desktop-icon" data-open="network"><span class="icon icon-network">⌘</span><span>studio_network</span></button><button class="desktop-icon" data-open="service"><span class="icon icon-service">♡</span><span>service</span></button><button class="desktop-icon" data-open="sport"><span class="icon icon-sport">≈</span><span>sport</span></button><a class="desktop-icon" href="mailto:ericghannam@gmail.com"><span class="icon icon-contact">✉</span><span>contact</span></a></section>
-<section class="window active" id="welcome" style="--x:50%;--y:48%;--w:560px"><div class="window-bar"><div class="traffic"><button class="close" aria-label="Close"></button><i></i><i></i></div><span>Welcome</span><span></span></div><div class="window-body welcome-body"><div class="hello-orb">EG</div><p class="eyebrow">WELCOME TO</p><h1>EricOS</h1><p>An interactive snapshot of Eric Ghannam: student, builder, athlete, and believer in the power of staying open.</p><button class="primary close-window">Enter desktop <span>→</span></button><small>Tip: open an icon and drag its window around.</small></div></section>
-<section class="window" id="about" style="--x:43%;--y:45%;--w:610px"><div class="window-bar"><div class="traffic"><button class="close" aria-label="Close"></button><i></i><i></i></div><span>about_me.txt</span><span>TXT</span></div><div class="window-body text-editor"><div class="line-numbers">01<br>02<br>03<br>04<br>05<br>06<br>07<br>08</div><div><p><b>Hello world, I’m Eric. 👋</b></p><p>Born in London to French–Lebanese parents and raised across Singapore and Hong Kong, I learned early that belonging can mean building bridges between different worlds.</p><p>I study Economics, English, French, Mathematics, Computer Science, and Geography in the IB Diploma. Outside class, I create digital products, coach swimming, compete in the pool, and practise martial arts.</p><p class="code-line">core_value = “Be open”;</p></div></div></section>
-<section class="window" id="experience" style="--x:56%;--y:48%;--w:690px"><div class="window-bar"><div class="traffic"><button class="close" aria-label="Close"></button><i></i><i></i></div><span>Experience Explorer</span><span>3 ITEMS</span></div><div class="window-body file-view"><aside><button class="file-tab selected" data-tab="splash">🏊 Splash</button><button class="file-tab" data-tab="digital">⌘ Digital Studio</button><button class="file-tab" data-tab="reading">◫ Reading Coach</button></aside><div class="file-content" id="experienceContent"></div></div></section>
-<section class="window" id="projects" style="--x:52%;--y:50%;--w:720px"><div class="window-bar"><div class="traffic"><button class="close" aria-label="Close"></button><i></i><i></i></div><span>Projects</span><span>PLACEHOLDERS</span></div><div class="window-body project-files"><article><div class="file-art coral">01<span>↗</span></div><h3>Entrepreneurial Project</h3><p>Strategy · Leadership · Growth</p><small>Add case study</small></article><article><div class="file-art blue">02<span>↗</span></div><h3>Technology Project</h3><p>Code · Design · Problem-solving</p><small>Add case study</small></article><article><div class="file-art lime">03<span>↗</span></div><h3>Community Initiative</h3><p>Service · Communication · Impact</p><small>Add case study</small></article></div></section>
-<section class="window mini" id="service" style="--x:37%;--y:55%;--w:480px"><div class="window-bar"><div class="traffic"><button class="close" aria-label="Close"></button><i></i><i></i></div><span>service.app</span><span>ACTIVE</span></div><div class="window-body detail-card"><span class="big-stat">+120%</span><h2>Reach grew when I listened first.</h2><p>At Splash Foundation, I combine marketing with hands-on swimming coaching for migrant domestic workers. The experience changed how I lead: start with people, then build the message.</p></div></section>
-<section class="window mini" id="sport" style="--x:64%;--y:53%;--w:480px"><div class="window-bar"><div class="traffic"><button class="close" aria-label="Close"></button><i></i><i></i></div><span>sport.app</span><span>IN MOTION</span></div><div class="window-body detail-card sport-card"><span class="big-stat">2×</span><h2>Black belts. One long-term mindset.</h2><p>Competitive swimming and martial arts taught me to stay calm under pressure, study small improvements, and keep showing up long after motivation fades.</p></div></section>
-<section class="window network-window" id="network" style="--x:55%;--y:51%;--w:850px"><div class="window-bar"><div class="traffic"><button class="close" aria-label="Close"></button><i></i><i></i></div><span>Studio Network</span><span>16 LINKS</span></div><div class="window-body network-body"><header><div><p class="eyebrow">DIGITAL DEVELOPMENT</p><h2>Projects & communities</h2></div><p>Selected teams and releases I have contributed to across development, management, marketing, support, and testing.</p></header><div class="network-columns"><section><h3>Roblox projects <span>7</span></h3><div class="link-list"><a href="https://www.roblox.com/games/130247632398296/Anime-Fighting-Simulator-Endless" target="_blank" rel="noopener"><div><b>Anime Fighting Simulator: Endless</b><small>Tester</small></div><span>↗</span></a><a href="https://www.roblox.com/games/127519525950247/Manhwa-Legends" target="_blank" rel="noopener"><div><b>Manhwa Legends</b><small>Manager</small></div><span>↗</span></a><a href="https://www.roblox.com/games/16946008847/Anime-Final-Strike" target="_blank" rel="noopener"><div><b>Anime Final Strike</b><small>Developer + Manager</small></div><span>↗</span></a><a href="https://www.roblox.com/games/116766451305209/Anime-Story-2-Worlds-Collide" target="_blank" rel="noopener"><div><b>Anime Story 2: Worlds Collide</b><small>Game Developer</small></div><span>↗</span></a><a href="https://www.roblox.com/games/82674355647259/Anime-Destiny-Saiyon-Warrior" target="_blank" rel="noopener"><div><b>Anime Destiny: Saiyon Warrior</b><small>Lead Developer</small></div><span>↗</span></a><a href="https://www.roblox.com/games/129932912185311/Anime-Origins" target="_blank" rel="noopener"><div><b>Anime Origins</b><small>Marketer</small></div><span>↗</span></a><a href="https://www.roblox.com/games/94217045453265/Dueling-Grounds" target="_blank" rel="noopener"><div><b>Dueling Grounds</b><small>Tester</small></div><span>↗</span></a></div></section><section><h3>Discord communities <span>9</span></h3><div class="link-list discord-list"><a href="https://discord.gg/aJuC5RTHm6" target="_blank" rel="noopener"><div><b>Studio Community</b><small>Owner</small></div><span>↗</span></a><a href="https://discord.gg/afse" target="_blank" rel="noopener"><div><b>AFSE Community</b><small>Tester</small></div><span>↗</span></a><a href="https://discord.gg/STH73CRggq" target="_blank" rel="noopener"><div><b>Project Community I</b><small>Tester</small></div><span>↗</span></a><a href="https://discord.gg/nHQ9z4Pu9E" target="_blank" rel="noopener"><div><b>Project Community II</b><small>Tester</small></div><span>↗</span></a><a href="https://discord.gg/animestory" target="_blank" rel="noopener"><div><b>Anime Story</b><small>Developer</small></div><span>↗</span></a><a href="https://discord.gg/finalstrike" target="_blank" rel="noopener"><div><b>Final Strike</b><small>Community Manager + Developer</small></div><span>↗</span></a><a href="https://discord.gg/animedestiny" target="_blank" rel="noopener"><div><b>Anime Destiny</b><small>Lead Developer</small></div><span>↗</span></a><a href="https://discord.gg/animeorigins" target="_blank" rel="noopener"><div><b>Anime Origins</b><small>Community Support</small></div><span>↗</span></a><a href="https://discord.gg/mhl" target="_blank" rel="noopener"><div><b>MHL Community</b><small>Manager</small></div><span>↗</span></a></div></section></div></div></section>
-<div class="desktop-note"><span>NOW</span><p>IB Diploma · Class of 2027<br>Hong Kong</p></div><footer class="dock"><button data-open="about" aria-label="About"><span class="dock-icon icon-about">EG</span></button><button data-open="experience" aria-label="Experience"><span class="dock-icon icon-exp">↗</span></button><button data-open="projects" aria-label="Projects"><span class="dock-icon icon-project">◇</span></button><button data-open="network" aria-label="Studio Network"><span class="dock-icon icon-network">⌘</span></button><span class="divider"></span><a href="mailto:ericghannam@gmail.com" aria-label="Email Eric"><span class="dock-icon icon-contact">✉</span></a></footer><div class="mobile-hint">Tap an icon to explore EricOS</div></main><script src="script.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>EricOS — Eric Ghannam</title>
+
+  <meta
+    name="description"
+    content="An interactive portfolio by Eric Ghannam."
+  >
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
+
+  <style>
+    :root {
+      --glass: rgba(244, 248, 255, 0.8);
+      --ink: #13203b;
+      --muted: #60708c;
+      --mint: #6effd8;
+      --blue: #5375ff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      overflow: hidden;
+    }
+
+    body {
+      color: var(--ink);
+      font-family: Inter, sans-serif;
+    }
+
+    button,
+    a {
+      color: inherit;
+      font: inherit;
+    }
+
+    button {
+      cursor: pointer;
+    }
+
+    .desktop {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      background:
+        radial-gradient(circle at 10% 80%, #596fff 0, transparent 45%),
+        radial-gradient(circle at 90% 80%, #ff9c81 0, transparent 45%),
+        linear-gradient(135deg, #142952, #6e55b8 52%, #ea7890);
+      transition: background 0.8s;
+    }
+
+    .desktop.alt {
+      background:
+        radial-gradient(circle at 10% 80%, #09b5ab 0, transparent 45%),
+        radial-gradient(circle at 90% 80%, #d3ff73 0, transparent 45%),
+        linear-gradient(145deg, #082e32, #157f83 48%, #83d6c2);
+    }
+
+    .grain {
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      opacity: 0.1;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='.35'/%3E%3C/svg%3E");
+    }
+
+    /* Top menu */
+
+    .menubar {
+      position: relative;
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      height: 48px;
+      padding: 0 18px;
+      color: white;
+      background: rgba(13, 23, 50, 0.58);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+      backdrop-filter: blur(25px);
+    }
+
+    .menubar button {
+      color: inherit;
+      background: transparent;
+      border: 0;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 9px;
+      font-size: 0.9rem;
+    }
+
+    .brand-glyph {
+      display: grid;
+      place-items: center;
+      width: 25px;
+      height: 25px;
+      color: var(--mint);
+      border: 1px solid var(--mint);
+      border-radius: 7px;
+      font: 700 0.75rem "DM Mono";
+    }
+
+    .menubar nav {
+      display: flex;
+      gap: 5px;
+      margin-left: 24px;
+    }
+
+    .menubar nav button,
+    .bar-right button {
+      padding: 7px 9px;
+      border-radius: 7px;
+      font-size: 0.78rem;
+    }
+
+    .menubar nav button:hover,
+    .bar-right button:hover {
+      background: rgba(255, 255, 255, 0.13);
+    }
+
+    .bar-right {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-left: auto;
+      font: 500 0.76rem "DM Mono";
+    }
+
+    /* Desktop icons */
+
+    .icon-grid {
+      position: absolute;
+      z-index: 5;
+      top: 72px;
+      left: 20px;
+      display: grid;
+      gap: 15px;
+    }
+
+    .desktop-icon {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 7px;
+      width: 100px;
+      padding: 0;
+      color: white;
+      text-align: center;
+      text-decoration: none;
+      text-shadow: 0 1px 4px #1a1e45;
+      background: transparent;
+      border: 0;
+      font: 500 0.7rem "DM Mono";
+    }
+
+    .icon {
+      display: grid;
+      place-items: center;
+      width: 56px;
+      height: 56px;
+      border: 1px solid rgba(255, 255, 255, 0.45);
+      border-radius: 15px;
+      box-shadow:
+        inset 0 1px 1px rgba(255, 255, 255, 0.5),
+        0 7px 18px rgba(8, 12, 56, 0.25);
+      font-size: 1.3rem;
+      font-weight: 800;
+      transition: 0.2s;
+    }
+
+    .desktop-icon:hover .icon {
+      transform: translateY(-4px) scale(1.05);
+    }
+
+    .icon-about {
+      color: white;
+      background: linear-gradient(145deg, #5d7cff, #3452db);
+    }
+
+    .icon-experience {
+      color: #07342d;
+      background: linear-gradient(145deg, #6effd8, #18b89a);
+    }
+
+    .icon-projects {
+      color: #5d1f1f;
+      background: linear-gradient(145deg, #ffbc71, #ff705f);
+    }
+
+    .icon-network {
+      color: #72f5d1;
+      background: linear-gradient(145deg, #29203f, #111827);
+    }
+
+    .icon-service {
+      color: white;
+      background: linear-gradient(145deg, #ff85af, #db3777);
+    }
+
+    .icon-sport {
+      color: #143c22;
+      background: linear-gradient(145deg, #cfff72, #61d680);
+    }
+
+    .icon-contact {
+      color: #33415f;
+      background: linear-gradient(145deg, #f9faff, #c7d3ea);
+    }
+
+    /* Windows */
+
+    .window {
+      position: absolute;
+      z-index: 20;
+      top: var(--y);
+      left: var(--x);
+      display: none;
+      width: min(var(--width), calc(100vw - 150px));
+      overflow: hidden;
+      opacity: 0;
+      background: var(--glass);
+      border: 1px solid rgba(255, 255, 255, 0.62);
+      border-radius: 14px;
+      box-shadow: 0 28px 75px rgba(5, 12, 38, 0.36);
+      backdrop-filter: blur(28px) saturate(1.25);
+      transform: translate(-50%, -50%) scale(0.95);
+      transition: opacity 0.18s, transform 0.18s;
+    }
+
+    .window.active {
+      display: block;
+      opacity: 1;
+      transform: translate(-50%, -50%) scale(1);
+    }
+
+    .window.dragging {
+      transition: none;
+    }
+
+    .window-bar {
+      display: grid;
+      grid-template-columns: 1fr auto 1fr;
+      align-items: center;
+      height: 42px;
+      padding: 0 13px;
+      color: #4d5d78;
+      background: rgba(255, 255, 255, 0.45);
+      border-bottom: 1px solid rgba(47, 65, 104, 0.12);
+      cursor: grab;
+      user-select: none;
+      font: 500 0.7rem "DM Mono";
+    }
+
+    .window-bar > span:last-child {
+      text-align: right;
+      font-size: 0.6rem;
+    }
+
+    .traffic {
+      display: flex;
+      gap: 7px;
+    }
+
+    .traffic button,
+    .traffic i {
+      display: block;
+      width: 11px;
+      height: 11px;
+      padding: 0;
+      border: 0;
+      border-radius: 50%;
+    }
+
+    .traffic .close {
+      background: #ff6258;
+    }
+
+    .traffic i:nth-child(2) {
+      background: #ffbd2e;
+    }
+
+    .traffic i:nth-child(3) {
+      background: #28c941;
+    }
+
+    .window-body {
+      background: rgba(248, 251, 255, 0.65);
+    }
+
+    /* Welcome */
+
+    .welcome-body {
+      padding: 36px 55px 31px;
+      text-align: center;
+    }
+
+    .hello-orb {
+      display: grid;
+      place-items: center;
+      width: 74px;
+      height: 74px;
+      margin: 0 auto 19px;
+      color: white;
+      background: linear-gradient(145deg, #627dff, #5f46a9);
+      border-radius: 22px;
+      box-shadow: 0 14px 30px rgba(65, 78, 175, 0.3);
+      transform: rotate(-5deg);
+      font: 800 1.3rem "DM Mono";
+    }
+
+    .eyebrow {
+      margin: 0 0 5px;
+      color: var(--blue);
+      letter-spacing: 0.2em;
+      font: 500 0.66rem "DM Mono";
+    }
+
+    .welcome-body h1 {
+      margin: 0 0 12px;
+      font-size: 2.75rem;
+      letter-spacing: -0.055em;
+    }
+
+    .welcome-body > p:not(.eyebrow) {
+      color: var(--muted);
+      font-size: 0.95rem;
+      line-height: 1.65;
+    }
+
+    .primary {
+      margin: 7px 0 20px;
+      padding: 12px 18px;
+      color: white;
+      font-weight: 600;
+      background: var(--ink);
+      border: 0;
+      border-radius: 9px;
+    }
+
+    .primary:hover {
+      background: var(--blue);
+    }
+
+    .primary span {
+      margin-left: 18px;
+    }
+
+    .welcome-body small {
+      display: block;
+      color: #8290a8;
+      font: 0.67rem "DM Mono";
+    }
+
+    /* About */
+
+    .text-editor {
+      display: grid;
+      grid-template-columns: 42px 1fr;
+      min-height: 330px;
+      padding: 25px 29px;
+      font-size: 0.93rem;
+      line-height: 1.65;
+    }
+
+    .line-numbers {
+      margin-right: 20px;
+      color: #9ca7ba;
+      border-right: 1px solid #cfd5df;
+      font: 0.78rem/2.05 "DM Mono";
+    }
+
+    .text-editor p {
+      margin: 0 0 16px;
+    }
+
+    .code-line {
+      display: inline-block;
+      padding: 7px 10px;
+      color: #684fd1;
+      background: #e9e8ff;
+      border-radius: 5px;
+      font-family: "DM Mono";
+    }
+
+    /* Experience */
+
+    .file-view {
+      display: grid;
+      grid-template-columns: 185px 1fr;
+      min-height: 350px;
+    }
+
+    .file-view aside {
+      padding: 15px 10px;
+      background: rgba(219, 226, 240, 0.55);
+      border-right: 1px solid rgba(70, 86, 118, 0.12);
+    }
+
+    .file-tab {
+      width: 100%;
+      margin-bottom: 4px;
+      padding: 10px 11px;
+      text-align: left;
+      background: transparent;
+      border: 0;
+      border-radius: 7px;
+      font-size: 0.78rem;
+    }
+
+    .file-tab:hover,
+    .file-tab.selected {
+      background: rgba(255, 255, 255, 0.72);
+    }
+
+    .file-content {
+      padding: 30px;
+    }
+
+    .file-badge {
+      display: inline-block;
+      padding: 6px 8px;
+      color: #4055b9;
+      background: #dce2ff;
+      border-radius: 5px;
+      font: 500 0.65rem "DM Mono";
+    }
+
+    .file-content h2 {
+      margin: 16px 0 9px;
+      font-size: 1.7rem;
+      letter-spacing: -0.04em;
+    }
+
+    .file-content p {
+      color: var(--muted);
+      font-size: 0.9rem;
+      line-height: 1.68;
+    }
+
+    .file-content ul {
+      padding: 0;
+      margin-top: 22px;
+      list-style: none;
+    }
+
+    .file-content li {
+      padding: 9px 0;
+      border-top: 1px solid #d0d7e3;
+      font: 500 0.72rem "DM Mono";
+    }
+
+    /* Project placeholders */
+
+    .project-files {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 15px;
+      padding: 23px;
+    }
+
+    .project-files article {
+      padding: 10px;
+      background: rgba(255, 255, 255, 0.55);
+      border: 1px solid white;
+      border-radius: 11px;
+    }
+
+    .file-art {
+      display: flex;
+      justify-content: space-between;
+      height: 135px;
+      padding: 14px;
+      border-radius: 8px;
+      font: 700 2rem "DM Mono";
+    }
+
+    .file-art span {
+      font-size: 1rem;
+    }
+
+    .coral {
+      color: #5b1f1f;
+      background: #ff836b;
+    }
+
+    .blue {
+      color: white;
+      background: #5474ff;
+    }
+
+    .lime {
+      color: #254114;
+      background: #cfff65;
+    }
+
+    .project-files h3 {
+      margin: 13px 4px 4px;
+      font-size: 0.9rem;
+    }
+
+    .project-files p {
+      margin: 0 4px 12px;
+      color: var(--muted);
+      text-transform: uppercase;
+      font: 0.58rem "DM Mono";
+    }
+
+    .project-files small {
+      display: block;
+      padding: 9px 4px 2px;
+      color: #78859a;
+      border-top: 1px solid #d6dbe4;
+      font: 0.63rem "DM Mono";
+    }
+
+    /* Service and sport */
+
+    .detail-card {
+      padding: 30px;
+    }
+
+    .big-stat {
+      color: #e04e8a;
+      font-size: 3.8rem;
+      font-weight: 800;
+      line-height: 1;
+      letter-spacing: -0.07em;
+    }
+
+    .sport-card .big-stat {
+      color: #29a66d;
+    }
+
+    .detail-card h2 {
+      margin: 13px 0;
+      font-size: 1.55rem;
+      letter-spacing: -0.04em;
+    }
+
+    .detail-card p {
+      margin-bottom: 0;
+      color: var(--muted);
+      font-size: 0.9rem;
+      line-height: 1.65;
+    }
+
+    /* Studio Network */
+
+    .network-body {
+      max-height: 68vh;
+      padding: 22px;
+      overflow: auto;
+    }
+
+    .network-body > header {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 30px;
+      margin-bottom: 20px;
+    }
+
+    .network-body h2 {
+      margin: 3px 0 0;
+      font-size: 1.8rem;
+      letter-spacing: -0.045em;
+    }
+
+    .network-body > header > p {
+      max-width: 370px;
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.8rem;
+      line-height: 1.5;
+    }
+
+    .network-columns {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+
+    .network-columns > section {
+      padding: 14px;
+      background: rgba(255, 255, 255, 0.5);
+      border: 1px solid white;
+      border-radius: 11px;
+    }
+
+    .network-columns h3 {
+      display: flex;
+      justify-content: space-between;
+      margin: 0 0 10px;
+      color: #56647d;
+      text-transform: uppercase;
+      font: 600 0.72rem "DM Mono";
+    }
+
+    .network-columns h3 span {
+      padding: 2px 6px;
+      background: #e4e8f1;
+      border-radius: 4px;
+    }
+
+    .link-list {
+      display: grid;
+      gap: 6px;
+    }
+
+    .link-list a {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 11px;
+      text-decoration: none;
+      background: #f8f9fd;
+      border: 1px solid #e1e5ed;
+      border-radius: 8px;
+      transition: 0.18s;
+    }
+
+    .link-list a:hover {
+      border-color: #6d7fee;
+      box-shadow: 0 5px 12px rgba(37, 52, 102, 0.08);
+      transform: translateX(3px);
+    }
+
+    .link-list b {
+      display: block;
+      font-size: 0.74rem;
+    }
+
+    .link-list small {
+      display: block;
+      margin-top: 3px;
+      color: #6e7b91;
+      text-transform: uppercase;
+      font: 500 0.58rem "DM Mono";
+    }
+
+    .link-list > a > span {
+      color: #596ee3;
+    }
+
+    /* Desktop details and dock */
+
+    .desktop-note {
+      position: absolute;
+      top: 85px;
+      right: 30px;
+      color: white;
+      text-align: right;
+      text-shadow: 0 2px 10px rgba(0, 0, 0, 0.27);
+    }
+
+    .desktop-note span {
+      padding: 4px 6px;
+      border: 1px solid rgba(255, 255, 255, 0.55);
+      border-radius: 4px;
+      font: 500 0.65rem "DM Mono";
+    }
+
+    .desktop-note p {
+      font-size: 1.1rem;
+      font-weight: 600;
+      line-height: 1.5;
+    }
+
+    .dock {
+      position: absolute;
+      z-index: 80;
+      bottom: 15px;
+      left: 50%;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 10px;
+      background: rgba(240, 244, 255, 0.42);
+      border: 1px solid rgba(255, 255, 255, 0.45);
+      border-radius: 18px;
+      box-shadow: 0 12px 35px rgba(4, 13, 37, 0.2);
+      backdrop-filter: blur(25px);
+      transform: translateX(-50%);
+    }
+
+    .dock button,
+    .dock a {
+      padding: 0;
+      text-decoration: none;
+      background: transparent;
+      border: 0;
+    }
+
+    .dock-icon {
+      display: grid;
+      place-items: center;
+      width: 46px;
+      height: 46px;
+      border-radius: 12px;
+      box-shadow: 0 5px 12px rgba(10, 20, 50, 0.2);
+      font-weight: 800;
+      transition: 0.2s;
+    }
+
+    .dock button:hover .dock-icon,
+    .dock a:hover .dock-icon {
+      transform: translateY(-7px) scale(1.1);
+    }
+
+    .divider {
+      width: 1px;
+      height: 35px;
+      margin: 0 3px;
+      background: rgba(55, 67, 95, 0.35);
+    }
+
+    .mobile-hint {
+      display: none;
+    }
+
+    /* Mobile */
+
+    @media (max-width: 720px) {
+      .menubar nav {
+        display: none;
+      }
+
+      .icon-grid {
+        top: 78px;
+        left: 50%;
+        grid-template-columns: repeat(3, 82px);
+        gap: 20px 12px;
+        transform: translateX(-50%);
+      }
+
+      .desktop-icon {
+        width: 82px;
+      }
+
+      .desktop-note {
+        display: none;
+      }
+
+      .window {
+        top: 48% !important;
+        left: 50% !important;
+        width: calc(100vw - 24px) !important;
+        max-height: 70vh;
+      }
+
+      .window-body {
+        max-height: calc(70vh - 42px);
+        overflow: auto;
+      }
+
+      .welcome-body {
+        padding: 28px 24px;
+      }
+
+      .text-editor {
+        grid-template-columns: 30px 1fr;
+        padding: 20px 15px;
+      }
+
+      .line-numbers {
+        margin-right: 12px;
+      }
+
+      .file-view {
+        grid-template-columns: 1fr;
+      }
+
+      .file-view aside {
+        display: flex;
+        overflow: auto;
+      }
+
+      .file-tab {
+        white-space: nowrap;
+      }
+
+      .project-files,
+      .network-columns {
+        grid-template-columns: 1fr;
+      }
+
+      .file-art {
+        height: 90px;
+      }
+
+      .network-body > header {
+        display: block;
+      }
+
+      .network-body > header > p {
+        margin-top: 9px;
+      }
+
+      .mobile-hint {
+        position: absolute;
+        bottom: 88px;
+        left: 50%;
+        display: block;
+        color: rgba(255, 255, 255, 0.75);
+        white-space: nowrap;
+        transform: translateX(-50%);
+        font: 0.62rem "DM Mono";
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="desktop" id="desktop">
+    <div class="grain"></div>
+
+    <header class="menubar">
+      <button class="brand" data-open="welcome">
+        <span class="brand-glyph">E</span>
+        <b>EricOS</b>
+      </button>
+
+      <nav>
+        <button data-open="about">About</button>
+        <button data-open="experience">Experience</button>
+        <button data-open="projects">Projects</button>
+        <button data-open="network">Studio Network</button>
+      </nav>
+
+      <div class="bar-right">
+        <span>⌁</span>
+        <button id="themeToggle" aria-label="Change wallpaper">◐</button>
+        <time id="clock"></time>
+      </div>
+    </header>
+
+    <section class="icon-grid" aria-label="Desktop applications">
+      <button class="desktop-icon" data-open="about">
+        <span class="icon icon-about">EG</span>
+        <span>about_me.txt</span>
+      </button>
+
+      <button class="desktop-icon" data-open="experience">
+        <span class="icon icon-experience">↗</span>
+        <span>experience</span>
+      </button>
+
+      <button class="desktop-icon" data-open="projects">
+        <span class="icon icon-projects">◇</span>
+        <span>projects</span>
+      </button>
+
+      <button class="desktop-icon" data-open="network">
+        <span class="icon icon-network">⌘</span>
+        <span>studio_network</span>
+      </button>
+
+      <button class="desktop-icon" data-open="service">
+        <span class="icon icon-service">♡</span>
+        <span>service</span>
+      </button>
+
+      <button class="desktop-icon" data-open="sport">
+        <span class="icon icon-sport">≈</span>
+        <span>sport</span>
+      </button>
+
+      <a class="desktop-icon" href="mailto:ericghannam@gmail.com">
+        <span class="icon icon-contact">✉</span>
+        <span>contact</span>
+      </a>
+    </section>
+
+    <!-- Welcome window -->
+
+    <section
+      class="window active"
+      id="welcome"
+      style="--x: 50%; --y: 48%; --width: 560px;"
+    >
+      <div class="window-bar">
+        <div class="traffic">
+          <button class="close" aria-label="Close"></button>
+          <i></i>
+          <i></i>
+        </div>
+
+        <span>Welcome</span>
+        <span></span>
+      </div>
+
+      <div class="window-body welcome-body">
+        <div class="hello-orb">EG</div>
+
+        <p class="eyebrow">WELCOME TO</p>
+
+        <h1>EricOS</h1>
+
+        <p>
+          An interactive snapshot of Eric Ghannam: student, builder,
+          athlete, and believer in the power of staying open.
+        </p>
+
+        <button class="primary close-window">
+          Enter desktop <span>→</span>
+        </button>
+
+        <small>Tip: open an icon and drag its window around.</small>
+      </div>
+    </section>
+
+    <!-- About window -->
+
+    <section
+      class="window"
+      id="about"
+      style="--x: 43%; --y: 45%; --width: 610px;"
+    >
+      <div class="window-bar">
+        <div class="traffic">
+          <button class="close" aria-label="Close"></button>
+          <i></i>
+          <i></i>
+        </div>
+
+        <span>about_me.txt</span>
+        <span>TXT</span>
+      </div>
+
+      <div class="window-body text-editor">
+        <div class="line-numbers">
+          01<br>02<br>03<br>04<br>05<br>06<br>07<br>08
+        </div>
+
+        <div>
+          <p><b>Hello world, I’m Eric. 👋</b></p>
+
+          <p>
+            Born in London to French–Lebanese parents and raised across
+            Singapore and Hong Kong, I learned early that belonging can
+            mean building bridges between different worlds.
+          </p>
+
+          <p>
+            I study Economics, English, French, Mathematics, Computer
+            Science, and Geography in the IB Diploma. Outside class, I
+            create digital products, coach swimming, compete in the pool,
+            and practise martial arts.
+          </p>
+
+          <p class="code-line">core_value = "Be open";</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience window -->
+
+    <section
+      class="window"
+      id="experience"
+      style="--x: 56%; --y: 48%; --width: 690px;"
+    >
+      <div class="window-bar">
+        <div class="traffic">
+          <button class="close" aria-label="Close"></button>
+          <i></i>
+          <i></i>
+        </div>
+
+        <span>Experience Explorer</span>
+        <span>3 ITEMS</span>
+      </div>
+
+      <div class="window-body file-view">
+        <aside>
+          <button class="file-tab selected" data-tab="splash">
+            🏊 Splash
+          </button>
+
+          <button class="file-tab" data-tab="digital">
+            ⌘ Digital Studio
+          </button>
+
+          <button class="file-tab" data-tab="reading">
+            ◫ Reading Coach
+          </button>
+        </aside>
+
+        <div class="file-content" id="experienceContent"></div>
+      </div>
+    </section>
+
+    <!-- Project placeholders -->
+
+    <section
+      class="window"
+      id="projects"
+      style="--x: 52%; --y: 50%; --width: 720px;"
+    >
+      <div class="window-bar">
+        <div class="traffic">
+          <button class="close" aria-label="Close"></button>
+          <i></i>
+          <i></i>
+        </div>
+
+        <span>Projects</span>
+        <span>PLACEHOLDERS</span>
+      </div>
+
+      <div class="window-body project-files">
+        <article>
+          <div class="file-art coral">01 <span>↗</span></div>
+          <h3>Entrepreneurial Project</h3>
+          <p>Strategy · Leadership · Growth</p>
+          <small>Add case study</small>
+        </article>
+
+        <article>
+          <div class="file-art blue">02 <span>↗</span></div>
+          <h3>Technology Project</h3>
+          <p>Code · Design · Problem-solving</p>
+          <small>Add case study</small>
+        </article>
+
+        <article>
+          <div class="file-art lime">03 <span>↗</span></div>
+          <h3>Community Initiative</h3>
+          <p>Service · Communication · Impact</p>
+          <small>Add case study</small>
+        </article>
+      </div>
+    </section>
+
+    <!-- Service window -->
+
+    <section
+      class="window"
+      id="service"
+      style="--x: 37%; --y: 55%; --width: 480px;"
+    >
+      <div class="window-bar">
+        <div class="traffic">
+          <button class="close" aria-label="Close"></button>
+          <i></i>
+          <i></i>
+        </div>
+
+        <span>service.app</span>
+        <span>ACTIVE</span>
+      </div>
+
+      <div class="window-body detail-card">
+        <span class="big-stat">+120%</span>
+
+        <h2>Reach grew when I listened first.</h2>
+
+        <p>
+          At Splash Foundation, I combine marketing with hands-on swimming
+          coaching for migrant domestic workers. The experience changed how
+          I lead: start with people, then build the message.
+        </p>
+      </div>
+    </section>
+
+    <!-- Sport window -->
+
+    <section
+      class="window"
+      id="sport"
+      style="--x: 64%; --y: 53%; --width: 480px;"
+    >
+      <div class="window-bar">
+        <div class="traffic">
+          <button class="close" aria-label="Close"></button>
+          <i></i>
+          <i></i>
+        </div>
+
+        <span>sport.app</span>
+        <span>IN MOTION</span>
+      </div>
+
+      <div class="window-body detail-card sport-card">
+        <span class="big-stat">2×</span>
+
+        <h2>Black belts. One long-term mindset.</h2>
+
+        <p>
+          Competitive swimming and martial arts taught me to stay calm
+          under pressure, study small improvements, and keep showing up
+          long after motivation fades.
+        </p>
+      </div>
+    </section>
+
+    <!-- Studio Network -->
+
+    <section
+      class="window"
+      id="network"
+      style="--x: 55%; --y: 51%; --width: 850px;"
+    >
+      <div class="window-bar">
+        <div class="traffic">
+          <button class="close" aria-label="Close"></button>
+          <i></i>
+          <i></i>
+        </div>
+
+        <span>Studio Network</span>
+        <span>16 LINKS</span>
+      </div>
+
+      <div class="window-body network-body">
+        <header>
+          <div>
+            <p class="eyebrow">DIGITAL DEVELOPMENT</p>
+            <h2>Projects & communities</h2>
+          </div>
+
+          <p>
+            Selected teams and releases I have contributed to across
+            development, management, marketing, support, and testing.
+          </p>
+        </header>
+
+        <div class="network-columns">
+          <section>
+            <h3>Roblox projects <span>7</span></h3>
+
+            <div class="link-list">
+              <a
+                href="https://www.roblox.com/games/130247632398296/Anime-Fighting-Simulator-Endless"
+                target="_blank"
+                rel="noopener"
+              >
+                <div>
+                  <b>Anime Fighting Simulator: Endless</b>
+                  <small>Tester</small>
+                </div>
+                <span>↗</span>
+              </a>
+
+              <a
+                href="https://www.roblox.com/games/127519525950247/Manhwa-Legends"
+                target="_blank"
+                rel="noopener"
+              >
+                <div>
+                  <b>Manhwa Legends</b>
+                  <small>Manager</small>
+                </div>
+                <span>↗</span>
+              </a>
+
+              <a
+                href="https://www.roblox.com/games/16946008847/Anime-Final-Strike"
+                target="_blank"
+                rel="noopener"
+              >
+                <div>
+                  <b>Anime Final Strike</b>
+                  <small>Developer + Manager</small>
+                </div>
+                <span>↗</span>
+              </a>
+
+              <a
+                href="https://www.roblox.com/games/116766451305209/Anime-Story-2-Worlds-Collide"
+                target="_blank"
+                rel="noopener"
+              >
+                <div>
+                  <b>Anime Story 2: Worlds Collide</b>
+                  <small>Game Developer</small>
+                </div>
+                <span>↗</span>
+              </a>
+
+              <a
+                href="https://www.roblox.com/games/82674355647259/Anime-Destiny-Saiyon-Warrior"
+                target="_blank"
+                rel="noopener"
+              >
+                <div>
+                  <b>Anime Destiny: Saiyon Warrior</b>
+                  <small>Lead Developer</small>
+                </div>
+                <span>↗</span>
+              </a>
+
+              <a
+                href="https://www.roblox.com/games/129932912185311/Anime-Origins"
+                target="_blank"
+                rel="noopener"
+              >
+                <div>
+                  <b>Anime Origins</b>
+                  <small>Marketer</small>
+                </div>
+                <span>↗</span>
+              </a>
+
+              <a
+                href="https://www.roblox.com/games/94217045453265/Dueling-Grounds"
+                target="_blank"
+                rel="noopener"
+              >
+                <div>
+                  <b>Dueling Grounds</b>
+                  <small>Tester</small>
+                </div>
+                <span>↗</span>
+              </a>
+            </div>
+          </section>
+
+          <section>
+            <h3>Discord communities <span>9</span></h3>
+
+            <div class="link-list">
+              <a href="https://discord.gg/aJuC5RTHm6" target="_blank" rel="noopener">
+                <div><b>Studio Community</b><small>Owner</small></div>
+                <span>↗</span>
+              </a>
+
+              <a href="https://discord.gg/afse" target="_blank" rel="noopener">
+                <div><b>AFSE Community</b><small>Tester</small></div>
+                <span>↗</span>
+              </a>
+
+              <a href="https://discord.gg/STH73CRggq" target="_blank" rel="noopener">
+                <div><b>Project Community I</b><small>Tester</small></div>
+                <span>↗</span>
+              </a>
+
+              <a href="https://discord.gg/nHQ9z4Pu9E" target="_blank" rel="noopener">
+                <div><b>Project Community II</b><small>Tester</small></div>
+                <span>↗</span>
+              </a>
+
+              <a href="https://discord.gg/animestory" target="_blank" rel="noopener">
+                <div><b>Anime Story</b><small>Developer</small></div>
+                <span>↗</span>
+              </a>
+
+              <a href="https://discord.gg/finalstrike" target="_blank" rel="noopener">
+                <div>
+                  <b>Final Strike</b>
+                  <small>Community Manager + Developer</small>
+                </div>
+                <span>↗</span>
+              </a>
+
+              <a href="https://discord.gg/animedestiny" target="_blank" rel="noopener">
+                <div><b>Anime Destiny</b><small>Lead Developer</small></div>
+                <span>↗</span>
+              </a>
+
+              <a href="https://discord.gg/animeorigins" target="_blank" rel="noopener">
+                <div><b>Anime Origins</b><small>Community Support</small></div>
+                <span>↗</span>
+              </a>
+
+              <a href="https://discord.gg/mhl" target="_blank" rel="noopener">
+                <div><b>MHL Community</b><small>Manager</small></div>
+                <span>↗</span>
+              </a>
+            </div>
+          </section>
+        </div>
+      </div>
+    </section>
+
+    <div class="desktop-note">
+      <span>NOW</span>
+      <p>IB Diploma · Class of 2027<br>Hong Kong</p>
+    </div>
+
+    <footer class="dock">
+      <button data-open="about" aria-label="About">
+        <span class="dock-icon icon-about">EG</span>
+      </button>
+
+      <button data-open="experience" aria-label="Experience">
+        <span class="dock-icon icon-experience">↗</span>
+      </button>
+
+      <button data-open="projects" aria-label="Projects">
+        <span class="dock-icon icon-projects">◇</span>
+      </button>
+
+      <button data-open="network" aria-label="Studio Network">
+        <span class="dock-icon icon-network">⌘</span>
+      </button>
+
+      <span class="divider"></span>
+
+      <a href="mailto:ericghannam@gmail.com" aria-label="Email Eric">
+        <span class="dock-icon icon-contact">✉</span>
+      </a>
+    </footer>
+
+    <div class="mobile-hint">Tap an icon to explore EricOS</div>
+  </main>
+
+  <script>
+    const desktop = document.getElementById("desktop");
+    let topZ = 40;
+
+    const experiences = {
+      splash: {
+        badge: "COMMUNITY · 2025—NOW",
+        title: "Splash Foundation",
+        text:
+          "As Head of Marketing and a swimming coach, I help migrant domestic workers build confidence in the water while helping more people discover the program.",
+        points: [
+          "Program reach increased by approximately 120%",
+          "Adapted coaching to different comfort levels",
+          "Leadership through listening and respect"
+        ]
+      },
+
+      digital: {
+        badge: "BUILDING · 2022—NOW",
+        title: "Digital Studio",
+        text:
+          "I coordinate remote collaborators and turn user feedback into product decisions, working across scripting, design, planning, funding, and communication.",
+        points: [
+          "Python · Java · Lua",
+          "Project roadmaps and team coordination",
+          "Learning from testing, failure, and iteration"
+        ]
+      },
+
+      reading: {
+        badge: "EDUCATION · 2023—2025",
+        title: "Youth Reading Coach",
+        text:
+          "I designed engaging reading and grammar sessions for younger students at NLCS Singapore, focusing on confidence as much as accuracy.",
+        points: [
+          "Patient, individual support",
+          "Clear and encouraging explanations",
+          "Consistent community service"
+        ]
+      }
+    };
+
+    function renderExperience(key) {
+      const experience = experiences[key];
+      const container = document.getElementById("experienceContent");
+
+      container.innerHTML = `
+        <span class="file-badge">${experience.badge}</span>
+        <h2>${experience.title}</h2>
+        <p>${experience.text}</p>
+        <ul>
+          ${experience.points
+            .map(point => `<li>→ ${point}</li>`)
+            .join("")}
+        </ul>
+      `;
+    }
+
+    renderExperience("splash");
+
+    document.querySelectorAll(".file-tab").forEach(button => {
+      button.addEventListener("click", () => {
+        document.querySelectorAll(".file-tab").forEach(tab => {
+          tab.classList.remove("selected");
+        });
+
+        button.classList.add("selected");
+        renderExperience(button.dataset.tab);
+      });
+    });
+
+    function openWindow(id) {
+      const windowElement = document.getElementById(id);
+
+      if (!windowElement) return;
+
+      windowElement.classList.add("active");
+      windowElement.style.zIndex = ++topZ;
+    }
+
+    function closeWindow(windowElement) {
+      windowElement.classList.remove("active");
+    }
+
+    document.querySelectorAll("[data-open]").forEach(element => {
+      element.addEventListener("click", () => {
+        openWindow(element.dataset.open);
+      });
+    });
+
+    document.querySelectorAll(".close").forEach(button => {
+      button.addEventListener("click", event => {
+        closeWindow(event.target.closest(".window"));
+      });
+    });
+
+    document.querySelectorAll(".close-window").forEach(button => {
+      button.addEventListener("click", event => {
+        closeWindow(event.target.closest(".window"));
+      });
+    });
+
+    /* Draggable desktop windows */
+
+    document.querySelectorAll(".window").forEach(windowElement => {
+      const titleBar = windowElement.querySelector(".window-bar");
+      let dragData = null;
+
+      windowElement.addEventListener("pointerdown", () => {
+        windowElement.style.zIndex = ++topZ;
+      });
+
+      titleBar.addEventListener("pointerdown", event => {
+        if (
+          event.target.classList.contains("close") ||
+          window.innerWidth < 721
+        ) {
+          return;
+        }
+
+        const rectangle = windowElement.getBoundingClientRect();
+
+        dragData = {
+          offsetX: event.clientX - rectangle.left,
+          offsetY: event.clientY - rectangle.top
+        };
+
+        windowElement.classList.add("dragging");
+        titleBar.setPointerCapture(event.pointerId);
+      });
+
+      titleBar.addEventListener("pointermove", event => {
+        if (!dragData) return;
+
+        const x = Math.max(
+          0,
+          Math.min(
+            window.innerWidth - windowElement.offsetWidth,
+            event.clientX - dragData.offsetX
+          )
+        );
+
+        const y = Math.max(
+          48,
+          Math.min(
+            window.innerHeight - windowElement.offsetHeight - 80,
+            event.clientY - dragData.offsetY
+          )
+        );
+
+        windowElement.style.left = `${x}px`;
+        windowElement.style.top = `${y}px`;
+        windowElement.style.transform = "none";
+      });
+
+      titleBar.addEventListener("pointerup", () => {
+        dragData = null;
+        windowElement.classList.remove("dragging");
+      });
+    });
+
+    /* Live clock */
+
+    function updateClock() {
+      document.getElementById("clock").textContent =
+        new Intl.DateTimeFormat("en-GB", {
+          weekday: "short",
+          hour: "2-digit",
+          minute: "2-digit"
+        }).format(new Date());
+    }
+
+    updateClock();
+    setInterval(updateClock, 1000);
+
+    /* Wallpaper switch */
+
+    document
+      .getElementById("themeToggle")
+      .addEventListener("click", () => {
+        desktop.classList.toggle("alt");
+      });
+
+    /* Close the top window with Escape */
+
+    document.addEventListener("keydown", event => {
+      if (event.key !== "Escape") return;
+
+      const activeWindows = [
+        ...document.querySelectorAll(".window.active")
+      ].sort((first, second) => {
+        return (
+          Number(second.style.zIndex || 0) -
+          Number(first.style.zIndex || 0)
+        );
+      });
+
+      if (activeWindows[0]) {
+        closeWindow(activeWindows[0]);
+      }
+    });
+  </script>
+</body>
+</html>
